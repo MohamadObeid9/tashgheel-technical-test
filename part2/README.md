@@ -73,3 +73,7 @@ Finally, we can append the list element to `studentList`:
 ```js
 studentList.appendChild(list);
 ```
+
+### Notes on ai
+
+i didn't use any ai tools because the simplicity of this part
