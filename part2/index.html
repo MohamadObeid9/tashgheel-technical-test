@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <title>Student Page</title>
+</head>
+
+<body>
+  <h1>Students List</h2>
+    <ul id="studentList">
+      <li>Ali</li>
+      <li>Maya</li>
+    </ul>
+    <input type="text" id="name">
+    <button onclick="addStudent()">Add</button>
+    <script>
+      function addStudent() {
+        //   let name = document.getElementById("Name").value;//#1
+        let name = document.getElementById("name").value;
+        //   studentList.appendChild("<li>" + name + "</li>");//#3#4#5
+        let studentList = document.getElementById("studentlist")
+        let list = document.createElement("li")
+        list.textContent = name;
+        studentList.appendChild(list);
+        //   alert('Student ' + name ' added');//#2
+        alert('Student ' + name + ' added');
+      }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<html>
+
+<head>
+  <title>Student Page</title>
+</head>
+
+<body>
+  <h1>Students List</h2>
+    <ul id="studentList">
+      <li>Ali</li>
+      <li>Maya</li>
+    </ul>
+    <input type="text" id="name">
+    <button onclick="addStudent()">Add</button>
+    <script>
+      function addStudent() {
+        let name = document.getElementById("Name").value;
+        studentList.appendChild("<li>" + name + "</li>");
+        alert('Student ' + name ' added');
+      }
+    </script>
+</body>
+
+</html>
